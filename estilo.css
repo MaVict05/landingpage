@@ -1,0 +1,363 @@
+/*Reset y configuración base */
+html, body {
+  margin: 10;
+  padding: 0;
+  font-family: 'Agatho',' Wunderpunkt Regular';
+  background-image: url('img/textura\ papel.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #333;
+}
+
+h2{
+  margin: 0;
+  padding: 0.5em 0;
+  color: #132B4C;
+ }
+
+h1, h3, p {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header y navegación */
+
+header {
+  padding: 1.5em 2em;
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 2em;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  color: #888;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4em 2em;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+.hero .cta {
+  display: inline-block;
+  background-color: #087439;
+  color: #fff;
+  padding: 0.75em 2em;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/* Sección Emma */
+.sobre-emma {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4em 2em;
+  min-height: 60vh;
+  text-align: left;
+}
+
+.sobre-emma > div {
+  max-width: 600px;
+}
+
+/* Beneficios */
+.beneficios {
+  padding: 3em 2em;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.beneficio {
+  background-color: #f4f4f4;
+  padding: 1.5em;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Invitación */
+.invitacion {
+  background-color: rgba(203, 224, 242, 0.85);
+  margin: 3em auto;
+  padding: 2em;
+  max-width: 600px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.1em;
+}
+.invitacion-cat{
+  padding-right: 0cm;
+}
+
+/* Formulario 
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3em 2em;
+  gap: 2em;
+}
+
+.form-box {
+  background-color: #e1f0ff;
+  padding: 2em;
+  border-radius: 15px;
+  width: 300px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-box button {
+  width: 100%;
+  background-color: #1c7c3d;
+  color: #fff;
+  padding: 0.75em;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qr-box .contador {
+  font-size: 1.5em;
+  text-align: center;
+}*/
+.registro-container {
+  padding: 3em 2em;
+  background-color: #fbd3d6;
+  border: 6px solid #5ea8db;
+  border-radius: 25px;
+  max-width: 1000px;
+  margin: 5em auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-between;
+}
+
+.form-box {
+  background-color: #a3cff2;
+  padding: 2em;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-box h2 {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  text-transform: lowercase;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.form-box .nota {
+  font-size: 0.8em;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.form-box button {
+  width: 100%;
+  background-color: #086431;
+  color: #ffffff;
+  padding: 0.75em;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+  background-color: #66d54b;
+}
+
+/* QR y contador */
+.qr-box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.qr-box img {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.contador span {
+  background-color: #fff;
+  padding: 0.75em;
+  border-radius: 10px;
+  min-width: 70px;
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contador strong {
+  font-size: 1.5em;
+  display: block;
+}
+
+
+/* Testimonios */
+.testimonios {
+  padding: 3em 2em;
+  background-color: transparent;
+  text-align: center;
+}
+
+.comentarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.testi {
+  background-color: rgba(248, 157, 157, 0.9);
+  padding: 1em;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fondo-azul{
+  background-color: #a3cff2;
+}
+.fondo-rosa {
+  background-color: #fbd3d6;
+}
+
+.fondo-rosa-claro {
+  background-color: #fce2e5;
+}
+
+.fondo-verde {
+  background-color: #d0f5bc;
+}
+
+.fondo-celeste {
+  background-color: #d0e9f7;
+}
+
+
+/* Footer */
+.footer-final {
+  padding: 2em;
+  background-color: rgba(180, 213, 241, 0.9);
+  text-align: left;
+}
+
+.footer-logo img {
+  margin-bottom: 1em;
+}
+
+
+
+.social a {
+  margin: 0 0.5em;
+  display: inline-block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cards, .comentarios, .formulario {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-box, .qr-box {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-box, .qr-box {
+    width: 100%;
+    max-width: 90%;
+  }
+}
